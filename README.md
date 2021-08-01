@@ -1,30 +1,18 @@
-# CourseList
+# State Management with Angular NGRX with store
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+# @ngrx/store
+NgRx Store is a  Redux-inspired state management system  that enables you to use observables to manage state in an Angular application
 
-## Development server
+# How is it built-in
+It is combnation Redux pattern and Rxjs
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Main Key Functions
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. store: The store is what holds the app's state. 
+2. Action: A unique event dispatched from components and services that describe how the state should be changed. For    
+   example, ‘Add Customer’ can be an action that will change the state (i.e. add a new customer to the list).
+3. Reducer: All the state changes happen inside the reducer; it responds to the action and, based on that action, it will
+   create a new immutable state and return it to the store.
+4. Selector: Selector is a function used for obtaining a part of the state from the store and render the data view
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# State-management-with-NGRX" 
-"# State-management-with-NGRX" 
-# Angular-NGRX---State-Management-with-Store
