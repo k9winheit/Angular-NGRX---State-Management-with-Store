@@ -16,3 +16,6 @@ It is combnation Redux pattern and Rxjs
    create a new immutable state and return it to the store.
 4. Selector: Selector is a function used for obtaining a part of the state from the store and render the data view
 
+# NGRX Architecture
+
+![image](https://user-images.githubusercontent.com/11206974/127764128-cde89b89-769d-4d67-ab21-36fd2525f856.png)
