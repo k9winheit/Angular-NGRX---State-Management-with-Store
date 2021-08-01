@@ -1,0 +1,28 @@
+<div class="scroll-task-list">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Task Name</th>
+                <th scope="col">Place</th>
+                <th scope="col" style="text-align: center;">Completed ?</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr *ngFor="let task of tasks | async; index as i"> -->
+             <tr *ngFor="let task of tasks | async; index as i">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>
+                    {{ task.name }}
+                </td>
+                <td>{{ task.place }}</td>
+                <td style="text-align: center;">{{ task.isCompleted ?  "✅" :  ""}}</td>
+                <td><button class="btn btn-sm btn-info" (click)="toggleTask(task.id)"> Toggle </button>
+                    <button class="btn btn-sm btn-danger" (click)="removeTask(i)"> Delete </button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

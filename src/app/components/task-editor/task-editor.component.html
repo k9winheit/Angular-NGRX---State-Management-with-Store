@@ -1,0 +1,47 @@
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="alert alert-primary col-md-12" style="text-align: center;justify-content: center;">
+          <h4>Event Manager with NgRx</h4>
+        </div>
+  
+        <div class="col-md-8">
+            <app-task-list></app-task-list>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm">
+            <!-- <form #myform="ngForm" > -->
+                <form #myform="ngForm" (ngSubmit)="createTask(myform)">
+              <div class="form-group">
+                <label for="name">Identity</label>
+                <input type="text" class="form-control" [(ngModel)]="id" name="id" id="id" aria-describedby="name" required disabled> 
+              </div>
+              <div class="form-group">
+                <label for="name">Task Name</label>
+                <input type="text" class="form-control" ngModel name="name" id="name" aria-describedby="name" required>
+              </div>
+              <div class="form-group">
+                <label for="place">Place</label>
+                <input type="text" class="form-control" ngModel name="place" id="place" required>
+              </div>          
+  
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="text-align: center;justify-content: center;">
+          <h5>Task chart</h5>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <app-task-chart></app-task-chart>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+    </div>
+  </section>
